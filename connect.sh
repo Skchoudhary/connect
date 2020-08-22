@@ -3,13 +3,6 @@
 # Loading the config file with details
 config_path="/home/sandeepk/scripts/servers.json"
 servers=(s1 s2 cmm)
-day=$(date | cut -d " " -f1)
-not_days=(Sun Sat)
-if [[ " ${not_days[@]} " =~ $day ]]
-then
-    exit 1
-fi
-
 # echo $(cat $config_path | jq '.'$1)
 echo $1
 if [[ " ${servers[@]} " =~ $1 ]]; then
