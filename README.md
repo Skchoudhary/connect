@@ -1,9 +1,42 @@
 # Connect 
 
-A shell script that helps to *ssh* the servers with minimal info 
+A utility that helps you to *ssh* the servers with easily. 
 
-## Dependencies
+### Steps to setup the utility
 
-* Ubuntu Distro ``` sudo apt install jq``` 
+* A JSON processor([jq](https://stedolan.github.io/jq/))
+```bash
+<!-- Ubuntu Distro -->
+sudo apt install jq
 
-* Config.json: One time thing to add the servers details and update the config path in the script.
+``` 
+* Create a *servers.json* files with details of the servers in the given format
+```json
+
+{   
+  "server_key_1":{
+      "name":"Server Name",
+      "ip":"IP Address",
+      "url":"",
+      "pem":"full pem file path"
+  },
+  "server_key_2":{
+  "name":"Server Name",
+  "ip":"IP Address",
+  "url":"",
+  "pem":"full pem file path"
+  }
+}
+
+```
+* Give executable permission to the file
+```
+chmod +x connect.sh
+```
+Now you are all setup to *ssh* to the servers
+
+```
+<!-- Syntax to ssh into the server. -->
+./connect staging
+
+```
