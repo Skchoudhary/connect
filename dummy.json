@@ -3,13 +3,5 @@
       "ip":"IP Address",
       "url":"",
       "pem":"full pem file path"
-   
-},
-   "server_key_2":{
-      "name":"Server Celery",
-      "ip":"",
-      "url":"",
-      "pem":""
-   
-}
+      }
 }

@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Loading the config file with details
-config_path="/home/sandeepk/scripts/servers.json"
+config_path="./servers.json"
 servers=(s1 s2 cmm)
 # echo $(cat $config_path | jq '.'$1)
 echo $1
