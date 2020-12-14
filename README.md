@@ -1,6 +1,6 @@
 # Connect 
 
-A utility that helps you to *ssh* the servers with easily. 
+A utility that helps you to *ssh* the servers with ease. 
 
 ### Steps to setup the utility
 
